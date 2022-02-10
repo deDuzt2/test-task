@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="page">
+		<div class="client tender">
+			<div class="title">
+				<h3>Тендеры в роли Заказчика</h3>
+				<div class="button-counter">Показать выбранное (<span>3</span>)</div>
+			</div>
+			<div class="block">
+				<div class="block-header">
+					<div class="block-header_items">
+						<img src="img/arrow.svg" alt="arrow">
+						<div class="title">Реализуемые товары</div>
+						<div class="count">Выбранное(<span>0</span>)</div>
+					</div>
+					<input type="text">
+				</div>
+				<select name="region" multiple class="select-checkbox">
+					<option value="0">Все объекты</option>
+					<option value="1" selected>Ковры и ковровые изделия</option>
+					<option value="2">Ковры и ковровые покрытия</option>
+					<option value="3">Легковые пассажирские автомобили</option>
+					<option value="4" selected>Напольные покрытия (кроме ковров)</option>
+					<option value="5">Оборудование и инструменты для садов и парков, включая газонокосилки</option>
+					<option value="6" selected>Шелковые ткани</option>
+				</select>
+				<div class="block-footer">
+					<div class="button">Принять</div>
+					<div class="clear">Очистить</div>
+				</div>
+			</div>
+			<input class="main-input" type="text" placeholder="Код ОКРБ или наименование закупаемой продукции" readonly>
+		</div>
+		<div class="provider tender">
+			<div class="title">
+				<h3>Тендеры в роли Поставщика</h3>
+				<div class="button-counter">Показать выбранное (<span>0</span>)</div>
+			</div>
+			<div class="block">
+				<div class="block-header">
+					<div class="block-header_items">
+						<img src="img/arrow.svg" alt="arrow">
+						<div class="title">Реализуемые товары</div>
+						<div class="count">Выбранное(<span>0</span>)</div>
+					</div>
+					<input type="text">
+				</div>
+				<select name="region" multiple class="select-checkbox">
+					<option value="0">Все объекты</option>
+					<option value="1">Ковры и ковровые изделия</option>
+					<option value="2">Ковры и ковровые покрытия</option>
+					<option value="3">Легковые пассажирские автомобили</option>
+					<option value="4">Напольные покрытия (кроме ковров)</option>
+					<option value="5">Оборудование и инструменты для садов и парков, включая газонокосилки</option>
+					<option value="6">Шелковые ткани</option>
+				</select>
+				<div class="block-footer">
+					<div class="button">Принять</div>
+					<div class="clear">Очистить</div>
+				</div>
+			</div>
+			<input class="main-input" type="text" placeholder="Код ОКРБ или наименование закупаемой продукции" readonly>
+		</div>
+	</div>
+	<script src="/script.js"></script>
+</body>
+
+</html>
